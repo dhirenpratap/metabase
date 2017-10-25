@@ -8,6 +8,7 @@ import { Link } from "react-router";
 
 import Icon from "metabase/components/Icon.jsx";
 import LogoIcon from "metabase/components/LogoIcon.jsx";
+import LogoImg from "metabase/components/LogoImg.jsx";
 import * as Urls from "metabase/lib/urls";
 
 import ProfileLink from "metabase/nav/components/ProfileLink.jsx";
@@ -122,7 +123,7 @@ export default class Navbar extends Component {
                 <ul className="ml2 sm-pl4 pr1 flex align-center">
                     <li>
                         <Link to="/" data-metabase-event={"Navbar;Logo"} className="NavItem cursor-pointer text-white flex align-center my1 transition-background p1">
-                            <LogoIcon dark={true}></LogoIcon>
+                            <LogoImg className="text-brand my2"></LogoImg>
                         </Link>
                     </li>
                     <li className="pl3 hide xs-show">
